@@ -1,0 +1,103 @@
+
+.tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    /* height: 800px; */
+    background-color: #efe9de;
+    
+}
+.tips .container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+.tips .box-container{
+    width: 100%;
+    /* margin: 100px auto 50px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 0 50px;
+}
+.tips  h1.starter-text {
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    box-shadow:2px 5px 1px 2px #eb8e40;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+.tips  h1.starter-text:hover {
+    color: #000000;
+    box-shadow: 0px 1px 1px 5px #cc412d;
+    cursor: pointer;
+}
+.tips .box-container .tips-items {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 3;
+    /* border: 1px solid #000; */
+    border-radius: 40px;
+    height: 130px;
+    /* background-color: #cc412d; */
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+.tips .tips-items:hover{
+    background-color: #eb8e40;
+}
+ h1.end-text {
+    margin-top: 100px ;
+    font-size: 25px;
+    color: #000000;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    /* box-shadow:1px 1px 1px 5px #eb8e40; */
+    cursor: pointer;
+    transition: .3s;
+}
+.end-text  span{
+    text-transform: uppercase;
+    color: #cc412d;
+    position: relative;
+}
+.end-text  span::before{
+    content:  '';
+    position: absolute;
+    bottom: -4px;
+    right: 5%;
+    width: 0;
+    height: 0;
+    background-color: #eb8e40;
+    transition: .5s;
+}
+
+.end-text  span:hover::before{
+    content:  '';
+    position: absolute;
+    bottom: -5px;
+    left: 5%;
+    width: 90%;
+    height: 3px;
+    background-color: #eb8e40;
+}

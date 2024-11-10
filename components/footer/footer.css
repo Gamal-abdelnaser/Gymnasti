@@ -1,0 +1,147 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+}
+.footer .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footer .container .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+.footer .logo h1 a{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 30px;
+}
+.footer .logo h1 a{
+    margin-top: 0;
+    padding-top: 0;
+}
+.footer .logo p{
+    font-size: 18px;
+    margin: 10px 10px;
+    font-weight: 600;
+    color: #eb8e40;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:  25px 10px;
+}
+.icons i {
+    font-size: 20px;
+    transition: .3s;
+}
+.icons i:hover {
+    color: #eb8e40;
+}
+.Overview h2 , .company h2{
+    
+    color: #ba3823;
+    margin-bottom:10px;
+}
+
+.Overview .links{
+
+}
+.Overview .links li {
+    margin-bottom: 10px;
+}
+.Overview .links li a{
+    color: #000;
+    transition: .3s;
+}
+.Overview .links li a:hover {
+    color: #ba3823;
+}
+.company p {
+    margin-top: 5px;
+}
+.company p a{
+    color: #000;
+    transition: .3s;
+}
+.company p a:hover{
+    color: #eb8e40;
+}
+.developed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.developed .first-letter , .third-letter {
+    font-size: 16px;
+    font-weight: bold;
+}
+.developed .second-letter a {
+ color: #000;
+ border-radius: 20px;
+ padding: 2px 5px;
+ font-size: 20px;
+ transition: .3s;
+ font-weight: bold;
+}
+.developed .second-letter a:hover {
+
+color:#eb8e40;
+
+}
+@media(max-width: 800px) {
+    .footer .container  .content {
+        flex-direction: column;
+        /* margin-left: 50px; */
+        gap: 30px;
+        width: 90%;
+    }
+    .footer .container  .content .logo{
+        flex-direction: column;
+        /* margin-left: 50px; */
+        gap: 30px;
+    }
+    
+    .footer .container  .content .logo p{
+        margin-left: 0;
+    }
+    .footer .container  .content .logo .icons{
+        width: 150px;
+        margin-left: 0;
+    }
+    .developed {
+        /* width: 100%; */
+    }
+    
+}
+@media(max-width:700px) {
+    .developed .first-letter,.third-letter {
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .developed .second-letter a {
+        color: #000;
+        border-radius: 20px;
+        padding: 2px 5px;
+        font-size: 15px;
+        transition: .3s;
+        font-weight: bold;
+    }
+}
+@media(max-width:450px) {
+
+    .developed {
+        flex-direction: column;
+    }
+}

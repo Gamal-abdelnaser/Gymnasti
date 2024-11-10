@@ -1,0 +1,55 @@
+.imageSlider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    border-bottom: 20px solid #eb8e40;
+}
+.imageSlider .container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+    /* overflow: hidden; */
+}
+.imageSlider .container h1 {
+    margin: 50px 15%;
+    margin-bottom: 50px;
+    width: fit-content;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.imageSlider .container h1:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #eb8e40;
+}
+.carousel {
+    overflow: hidden;
+    cursor: grab;
+    width:100%;
+}
+.inner-carousel {
+    display: flex;
+    /* overflow: hidden; */
+}
+.item {
+    min-width: 20rem;
+    min-height: 25rem;
+    padding: 40px 20px;
+
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+}
